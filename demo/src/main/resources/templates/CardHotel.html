@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de producto del hotel</title>
+    <link rel="stylesheet" type="text/css" href="CardHotel.css">
+</head>
+<body>
+<h1>Productos destacados</h1>
+<!-- Aquí se mostrarán las 4 cards de productos -->
+<div class="product-card" th:each="reserva : ${posiblesReservas}">
+    <img src="{producto.getImagenes().get(0).getUrl()}" alt={producto.getImagenes().get(0).getTitulo()}> modificar de modo que solo traiga la primera imagen
+    <h2>{producto.getNombre()}</h2>
+    <h2>{producto.getCategoria().getTitulo()}</h2>
+    <p>Descripción breve del producto.</p>
+    <p class="category">Categoría del producto</p>
+    <h2>"Check-In : " + {reserva.getFechaInicial().toString()} + " Hora: " + {reserva.getHoraComienzo().toString()}</h2>
+    <h2>"Check-Out : " + {reservaOptional.get().getFechaFinal().toString() + " Hora: " + reservaOptional.get().getHoraFinal().toString()}</h2>
+</div>
+</body>
+</html>

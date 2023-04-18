@@ -1,0 +1,965 @@
+{
+	"info": {
+		"_postman_id": "7e424f18-3095-4d37-9647-9d00ba5b13ca",
+		"name": "Producto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23249516"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"nombre\": \"Alvear Palace Hotel\",\r\n        \"descripcion\": \"Situado en el barrio de Recoleta. Este hotel de cinco estrellas cuenta con una impresionante arquitectura francesa y ofrece una amplia gama de comodidades y servicios de alta calidad para sus huéspedes.\",\r\n        \"latitud\": \"-34,6148641\",\r\n        \"longitud\": \"-58,3659986\",\r\n        \"direccion\": \"Martha Salotti 445, C1107 CMB\",\r\n        \"imagenes\": [\r\n            {\r\n                \"titulo\": \"Habitación doble\",\r\n                \"url\": \"https://images.unsplash.com/photo-1645379033960-72d6cb488c0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Piscina\",\r\n                \"url\": \"https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Restaurante\",\r\n                \"url\": \"https://images.unsplash.com/photo-1584132878434-3b678a00a8bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Habitación doble\",\r\n                \"url\": \"https://images.unsplash.com/photo-1583522862857-bd9f6d34a236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Piscina\",\r\n                \"url\": \"https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Restaurante\",\r\n                \"url\": \"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            }\r\n        ],\r\n\r\n    \"caracteristicas\": [18,16,14,12,1,3,5,7], \r\n    \"id_Ciudad\": 5,\r\n    \"id_Categoria\": 5,\r\n    \"politicas\": [\r\n        {\r\n            \"nombre\": \"Normas de la casa\",\r\n            \"descripcion\": [\r\n            \"No hacer ruido después de las 10 pm\",\r\n            \"Respetar las horas de silencio\",\r\n            \"No traer mascotas sin autorización\",\r\n            \"No dejar objetos personales en áreas comunes\",\r\n            \"No fumar dentro del área común\"\r\n            ]\r\n},\r\n{\r\n            \"nombre\": \"Salud y Seguridad\",\r\n            \"descripcion\": [\r\n            \"Respetar las normas de capacidad máxima en las áreas comunes\",\r\n            \"No utilizar aparatos eléctricos peligrosos en la habitación\",\r\n            \"No dejar objetos de valor sin supervisión en la habitación\"\r\n                ]\r\n},\r\n{\r\n    \"nombre\": \"Politica de cancelacion\",\r\n    \"descripcion\": [\r\n        \"No hay reembolso por salida anticipada\",\r\n        \"Se permite cambiar la fecha de la reserva sin cargo adicional sujeto a disponibilidad\",\r\n        \"Las cancelaciones deben realizarse por escrito o por teléfono\"\r\n    ]\r\n}]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Imagen",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Probando\",\r\n    \"url\": \"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=86\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/agregarImagen/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"agregarImagen",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Item_Politica",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"nombre\": \"Alvear Palace Hotel\",\r\n        \"descripcion\": \"Situado en el barrio de Recoleta. Este hotel de cinco estrellas cuenta con una impresionante arquitectura francesa y ofrece una amplia gama de comodidades y servicios de alta calidad para sus huéspedes.\",\r\n        \"imagenes\": [\r\n            {\r\n                \"titulo\": \"Habitación doble\",\r\n                \"url\": \"https://images.unsplash.com/photo-1645379033960-72d6cb488c0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Piscina\",\r\n                \"url\": \"https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Restaurante\",\r\n                \"url\": \"https://images.unsplash.com/photo-1584132878434-3b678a00a8bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Habitación doble\",\r\n                \"url\": \"https://images.unsplash.com/photo-1583522862857-bd9f6d34a236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Piscina\",\r\n                \"url\": \"https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Restaurante\",\r\n                \"url\": \"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            }\r\n        ],\r\n\r\n    \"caracteristicas\": [18,16,14,12,1,3,5,7], \r\n    \"id_Ciudad\": 5,\r\n    \"id_Categoria\": 5,\r\n    \"politicas\": [\r\n        {\r\n            \"nombre\": \"Normas de la casa\",\r\n            \"descripcion\": [\r\n            \"No hacer ruido después de las 10 pm\",\r\n            \"Respetar las horas de silencio\",\r\n            \"No traer mascotas sin autorización\",\r\n            \"No dejar objetos personales en áreas comunes\",\r\n            \"No fumar dentro del área común\"\r\n            ]\r\n},\r\n{\r\n            \"nombre\": \"Salud y Seguridad\",\r\n            \"descripcion\": [\r\n            \"Respetar las normas de capacidad máxima en las áreas comunes\",\r\n            \"No utilizar aparatos eléctricos peligrosos en la habitación\",\r\n            \"No dejar objetos de valor sin supervisión en la habitación\"\r\n                ]\r\n},\r\n{\r\n    \"nombre\": \"Politica de cancelacion\",\r\n    \"descripcion\": [\r\n        \"No hay reembolso por salida anticipada\",\r\n        \"Se permite cambiar la fecha de la reserva sin cargo adicional sujeto a disponibilidad\",\r\n        \"Las cancelaciones deben realizarse por escrito o por teléfono\"\r\n    ]\r\n}]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/agregarItemPolitica?productoId=48&politicaId=143&descripcion=NuevoItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"agregarItemPolitica"
+					],
+					"query": [
+						{
+							"key": "productoId",
+							"value": "48"
+						},
+						{
+							"key": "politicaId",
+							"value": "143"
+						},
+						{
+							"key": "descripcion",
+							"value": "NuevoItem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Caracteristicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"nombre\": \"Alvear Palace Hotel\",\r\n        \"descripcion\": \"Situado en el barrio de Recoleta. Este hotel de cinco estrellas cuenta con una impresionante arquitectura francesa y ofrece una amplia gama de comodidades y servicios de alta calidad para sus huéspedes.\",\r\n        \"imagenes\": [\r\n            {\r\n                \"titulo\": \"Habitación doble\",\r\n                \"url\": \"https://images.unsplash.com/photo-1645379033960-72d6cb488c0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Piscina\",\r\n                \"url\": \"https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Restaurante\",\r\n                \"url\": \"https://images.unsplash.com/photo-1584132878434-3b678a00a8bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Habitación doble\",\r\n                \"url\": \"https://images.unsplash.com/photo-1583522862857-bd9f6d34a236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Piscina\",\r\n                \"url\": \"https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80\"\r\n            },\r\n            {\r\n                \"titulo\": \"Restaurante\",\r\n                \"url\": \"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n            }\r\n        ],\r\n\r\n    \"caracteristicas\": [18,16,14,12,1,3,5,7], \r\n    \"id_Ciudad\": 5,\r\n    \"id_Categoria\": 5,\r\n    \"politicas\": [\r\n        {\r\n            \"nombre\": \"Normas de la casa\",\r\n            \"descripcion\": [\r\n            \"No hacer ruido después de las 10 pm\",\r\n            \"Respetar las horas de silencio\",\r\n            \"No traer mascotas sin autorización\",\r\n            \"No dejar objetos personales en áreas comunes\",\r\n            \"No fumar dentro del área común\"\r\n            ]\r\n},\r\n{\r\n            \"nombre\": \"Salud y Seguridad\",\r\n            \"descripcion\": [\r\n            \"Respetar las normas de capacidad máxima en las áreas comunes\",\r\n            \"No utilizar aparatos eléctricos peligrosos en la habitación\",\r\n            \"No dejar objetos de valor sin supervisión en la habitación\"\r\n                ]\r\n},\r\n{\r\n    \"nombre\": \"Politica de cancelacion\",\r\n    \"descripcion\": [\r\n        \"No hay reembolso por salida anticipada\",\r\n        \"Se permite cambiar la fecha de la reserva sin cargo adicional sujeto a disponibilidad\",\r\n        \"Las cancelaciones deben realizarse por escrito o por teléfono\"\r\n    ]\r\n}]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/agregarCaracteristica?productoId=48&idCaracteristicas=5,6,7,10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"agregarCaracteristica"
+					],
+					"query": [
+						{
+							"key": "productoId",
+							"value": "48"
+						},
+						{
+							"key": "idCaracteristicas",
+							"value": "5,6,7,10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Item_Politicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/actualizarItemPolitica?productoId=20&politicaId=58&descripcion=No dejar velas encendidas sin supervision&newDescripcion=Update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"actualizarItemPolitica"
+					],
+					"query": [
+						{
+							"key": "productoId",
+							"value": "20"
+						},
+						{
+							"key": "politicaId",
+							"value": "58"
+						},
+						{
+							"key": "descripcion",
+							"value": "No dejar velas encendidas sin supervision"
+						},
+						{
+							"key": "newDescripcion",
+							"value": "Update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Producto Completo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/modificarProductoCompleto/48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"modificarProductoCompleto",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Item_Politica",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/eliminarItemPolitica?productoId=20&politicaId=58&descripcion=No usar las areas comunes para almacenar objetos personales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"eliminarItemPolitica"
+					],
+					"query": [
+						{
+							"key": "productoId",
+							"value": "20"
+						},
+						{
+							"key": "politicaId",
+							"value": "58"
+						},
+						{
+							"key": "descripcion",
+							"value": "No usar las areas comunes para almacenar objetos personales"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id Caracteristicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"caracteristicas\": [7,9]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/eliminarCaracteristicas/48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"eliminarCaracteristicas",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id Politicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/eliminarPoliticas/18?idPoliticas=52,53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"eliminarPoliticas",
+						"18"
+					],
+					"query": [
+						{
+							"key": "idPoliticas",
+							"value": "52,53"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id Imagenes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/eliminarImagenes/18?idsImagenes=103,104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"eliminarImagenes",
+						"18"
+					],
+					"query": [
+						{
+							"key": "idsImagenes",
+							"value": "103,104"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Nombre_Descripcion_Latitud_Longitud_Direccion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"nombre\": \"InterContinental Buenos Aires\",\r\n    \"descripcion\": \"Situado en el barrio de Recoleta. Este hotel de cinco estrellas cuenta con una impresionante arquitectura francesa y ofrece una amplia gama de comodidades y servicios de alta calidad para sus huéspedes.\",\r\n    \"latitud\": \"-34,597888\",\r\n    \"longitud\": \"-58,384073\",\r\n    \"direccion\": \"Moreno 809\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/modificar/48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"modificar",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Caracteristicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"caracteristicas\": [2,3]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/modificarCaracteristicas/48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"modificarCaracteristicas",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Ciudad",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id_Ciudad\": 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/modificarCiudad/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"modificarCiudad",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Categoria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id_Categoria\": 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/modificarCategoria/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"modificarCategoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscar/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Caracteristicas_No_Asignadas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/caracteristicas-no-asignadas/48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"caracteristicas-no-asignadas",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Nombre_Producto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarNombre/Hotel del Sol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarNombre",
+						"Hotel del Sol"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Descripcion_Producto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarDescripcion/Este es el Hotel A, ubicado en el centro de la ciudad.",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarDescripcion",
+						"Este es el Hotel A, ubicado en el centro de la ciudad."
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Nombre_Ciudad",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarCiudad/Buenos Aires",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarCiudad",
+						"Buenos Aires"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Nombre_Caracteristicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarCaracteristicas/Bar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarCaracteristicas",
+						"Bar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Titulo_Categoria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarTituloCategoria/Hoteles Boutique",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarTituloCategoria",
+						"Hoteles Boutique"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Descripcion_Categoria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarDescripcionCategoria/Alojamientos de lujo para alquiler vacacional o residencial.",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarDescripcionCategoria",
+						"Alojamientos de lujo para alquiler vacacional o residencial."
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Nombre_Politicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarTituloPoliticas/Update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarTituloPoliticas",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Descripcion_Politicas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarDescripcionPoliticas/NuevoItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarDescripcionPoliticas",
+						"NuevoItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Productos Random",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/listarProductosRandom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"listarProductosRandom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Caracteristicas_IdIn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    [1]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarCaracteristicas_IdIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarCaracteristicas_IdIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Categorias_IdIn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    [3,4]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarCategorias_IdIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarCategorias_IdIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Ciudades_IdIn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    [3,4]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/buscarCiudades_IdIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"buscarCiudades_IdIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/eliminar/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"eliminar",
+						"19"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

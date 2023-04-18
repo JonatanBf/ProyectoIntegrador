@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "06b7b3c8-45c0-4db3-89a9-6c68ef8259ee",
+		"name": "Caracteristicas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23249516"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n       \r\n        \"nombre\": \"Wi-Fi\",\r\n        \"icono\": \"fa-solid fa-wifi\"\r\n    },\r\n    {\r\n      \r\n        \"nombre\": \"Television\",\r\n        \"icono\": \"fa-solid fa-tv\"\r\n    },\r\n    {\r\n        \r\n        \"nombre\": \"Aire Acondicionado\",\r\n        \"icono\": \"fa-solid fa-snowflake\"\r\n    },\r\n    {\r\n    \r\n        \"nombre\": \"Cocina\",\r\n        \"icono\": \"fa-solid fa-fire-burner\"\r\n    },\r\n    {\r\n     \r\n        \"nombre\": \"Mascotas\",\r\n        \"icono\": \"fa-solid fa-paw\"\r\n    },\r\n    {\r\n       \r\n        \"nombre\": \"Estacionamiento\",\r\n        \"icono\": \"fa-solid fa-car\"\r\n    },\r\n    {\r\n     \r\n        \"nombre\": \"Pileta\",\r\n        \"icono\": \"fa-solid fa-person-swimming\"\r\n    },\r\n    {\r\n   \r\n        \"nombre\": \"Spa\",\r\n        \"icono\": \"fa-solid fa-spa\"\r\n    },\r\n    {\r\n      \r\n        \"nombre\": \"Sauna\",\r\n        \"icono\": \"fa-solid fa-hot-tub\"\r\n    },\r\n    {\r\n      \r\n        \"nombre\": \"Transporte al aeropuerto\",\r\n        \"icono\": \"fa-solid fa-plane-departure\"\r\n    },\r\n    {\r\n        \r\n        \"nombre\": \"Terraza\",\r\n        \"icono\": \"fa-solid fa-umbrella-beach\"\r\n    },\r\n    {\r\n        \r\n        \"nombre\": \"Bar\",\r\n        \"icono\": \"fa-solid fa-cocktail\"\r\n    },\r\n    {\r\n        \r\n        \"nombre\": \"Desayuno gratis\",\r\n        \"icono\": \"fa-solid fa-coffee\"\r\n    },\r\n    {\r\n        \r\n        \"nombre\": \"Recepción 24 horas\",\r\n        \"icono\": \"fa-solid fa-clock\"\r\n    },\r\n    {\r\n    \r\n        \"nombre\": \"Restaurante\",\r\n        \"icono\": \"fa-solid fa-utensils\"\r\n    },\r\n    {\r\n       \r\n        \"nombre\": \"Servicio a la habitación\",\r\n        \"icono\": \"fa-solid fa-concierge-bell\"\r\n    },\r\n    {\r\n       \r\n        \"nombre\": \"Mascotas permitidas\",\r\n        \"icono\": \"fa-solid fa-dog\"\r\n    },\r\n    {\r\n       \r\n        \"nombre\": \"Piscina\",\r\n        \"icono\": \"fa-solid fa-swimming-pool\"\r\n    },\r\n    {\r\n      \r\n        \"nombre\": \"Gimnasio\",\r\n        \"icono\": \"fa-solid fa-dumbbell\"\r\n    }\r\n  \r\n\r\n \r\n\r\n\r\n \r\n   \r\n \r\n  \r\n\r\n  \r\n \r\n\r\n\r\n\r\n\r\n    \r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/caracteristicas/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteristicas",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/caracteristicas/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteristicas",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \r\n        \"nombre\": \"Update\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/caracteristicas/modificar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteristicas",
+						"modificar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/caracteristicas/eliminar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteristicas",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/caracteristicas/buscar/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteristicas",
+						"buscar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar/Nombre",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDaG9uaSIsImV4cCI6MTY3MjUxMzMxMiwiaWF0IjoxNjcwODA4Mjc4fQ.blL5kXhy8qS444YPMfp2hiK_1s-DR4vYG7bbBeMwO1Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/caracteristicas/buscarNombre/Mascotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteristicas",
+						"buscarNombre",
+						"Mascotas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

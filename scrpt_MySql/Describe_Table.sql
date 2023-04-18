@@ -1,0 +1,12 @@
+describe caracteristicas;
+describe categoria;
+describe ciudades;
+describe imagen;
+describe politicas;
+describe politicas_descripcion;
+describe producto_caracteristica;
+describe productos;
+describe puntuacion;
+describe reservas;
+describe roles;
+describe usuario;

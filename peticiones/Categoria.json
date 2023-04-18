@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "a49e3b11-ee29-4ede-a83e-9315506e20c6",
+		"name": "Categoria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23249516"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n   {\r\n        \"titulo\": \"Hoteles de Lujo\",\r\n        \"descripcion\": \"Hoteles de lujo que ofrecen servicios de alta gama y comodidades premium.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    },\r\n    {\r\n        \"titulo\": \"Hoteles Económicos\",\r\n        \"descripcion\": \"Hoteles económicos con precios asequibles y comodidades básicas.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    },\r\n    {\r\n        \"titulo\": \"Hoteles Boutique\",\r\n        \"descripcion\": \"Hoteles de diseño únicos y personalizados que ofrecen una experiencia de hospedaje distinta.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80\"\r\n    },\r\n    {\r\n        \"titulo\": \"Resorts\",\r\n        \"descripcion\": \"Hoteles con amplias instalaciones de entretenimiento y actividades para vacaciones y descanso.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1583522862857-bd9f6d34a236?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    },\r\n    {\r\n        \"titulo\": \"Casas de Huéspedes\",\r\n        \"descripcion\": \"Hoteles que ofrecen habitaciones en hogares o propiedades privadas.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1584132878434-3b678a00a8bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    },\r\n    {\r\n        \"titulo\": \"Departamentos\",\r\n        \"descripcion\": \"Departamentos para alquiler de corto o largo plazo.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    },\r\n    {\r\n        \"titulo\": \"Casas\",\r\n        \"descripcion\": \"Casas para alquiler vacacional o residencial.\",\r\n        \"url\": \"https://images.unsplash.com/photo-1645379033960-72d6cb488c0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categoria/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categoria/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Titulo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDaG9uaSIsImV4cCI6MTY3MjUxMzMxMiwiaWF0IjoxNjcwODA4Mjc4fQ.blL5kXhy8qS444YPMfp2hiK_1s-DR4vYG7bbBeMwO1Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categoria/buscarTitulo/Casas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"buscarTitulo",
+						"Casas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Descripcion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDaG9uaSIsImV4cCI6MTY3MjUxMzMxMiwiaWF0IjoxNjcwODA4Mjc4fQ.blL5kXhy8qS444YPMfp2hiK_1s-DR4vYG7bbBeMwO1Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categoria/buscarDescripcion/Casas para alquiler vacacional o residencial.",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"buscarDescripcion",
+						"Casas para alquiler vacacional o residencial."
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n     \r\n       \"url\": \"https://images.unsplash.com/photo-1584132878434-3b678a00a8bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categoria/modificar/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"modificar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categoria/eliminar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categoria/buscar/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"buscar",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

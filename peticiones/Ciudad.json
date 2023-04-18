@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "0bc66dd7-8bd0-41ba-832c-341840238dd8",
+		"name": "Ciudad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23249516"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n     {\r\n        \"nombre\": \"Buenos Aires\",\r\n        \"pais\": \"Argentina\"\r\n    },\r\n    {\r\n        \"nombre\": \"Córdoba\",\r\n        \"pais\": \"Argentina\"\r\n    },\r\n    {\r\n        \"nombre\": \"Rosario\",\r\n        \"pais\": \"Argentina\"\r\n    },\r\n    {\r\n        \"nombre\": \"Mendoza\",\r\n        \"pais\": \"Argentina\"\r\n    },\r\n    {\r\n        \"nombre\": \"Salta\",\r\n        \"pais\": \"Argentina\"\r\n    },\r\n    {\r\n        \"nombre\": \"La Plata\",\r\n        \"pais\": \"Argentina\"\r\n    },\r\n    {\r\n        \"nombre\": \"1234Update\",\r\n        \"pais\": \"1234Update\"\r\n    }\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ciudad/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ciudad",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    \r\n    {\r\n        \"nombre\": \"Update\",\r\n        \"pais\": \"Argentina\"\r\n    }\r\n\r\n\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ciudad/modificar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ciudad",
+						"modificar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ciudad/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ciudad",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar/Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ciudad/buscar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ciudad",
+						"buscar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Nombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ciudad/buscarCiudad/Rosario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ciudad",
+						"buscarCiudad",
+						"Rosario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar/id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ciudad/eliminar/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ciudad",
+						"eliminar",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
