@@ -34,7 +34,7 @@ public class Producto {
     private String direccion;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "imagen_id")
+    @JoinColumn(name = "producto_id")
     private List<Imagen> imagenes;
 
     @ManyToOne(cascade = CascadeType.DETACH)
@@ -53,7 +53,7 @@ public class Producto {
     private List<Caracteristicas> caracteristicas = new ArrayList<>();
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "politicas_id")
+    @JoinColumn(name = "producto_id")
     private List<Politicas> politicas = new ArrayList<>();
 
 }

@@ -118,7 +118,7 @@ VALUES
 (19,1),(19,2),(19,3),(19,4),(19,5),(19,6),(19,7),(19,8),
 (20,9),(20,10),(20,11),(20,12),(20,13),(20,14),(20,15),(20,16);
 
-INSERT INTO politicas (nombre,politicas_id)
+INSERT INTO politicas (nombre,producto_id)
 VALUES
 ( "Normas de la Casa",1),
 ( "Salud y Seguridad",1),
@@ -534,7 +534,7 @@ VALUES
 ( "No se permite la cancelacion ni la modificacion de la reserva.",60),
 ( "Cancelacion gratuita hasta 48 horas antes de la fecha de llegada",60);
 
-INSERT INTO imagen (imagen_id,titulo,url)
+INSERT INTO imagen (producto_id,titulo,url)
 VALUES
 (1, "Restaurante", "https://images.unsplash.com/photo-1621873495868-6c5774cf6012?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"),
 (1, "Piscina", "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
