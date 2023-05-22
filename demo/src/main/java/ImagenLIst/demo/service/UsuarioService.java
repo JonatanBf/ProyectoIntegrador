@@ -2,7 +2,6 @@ package ImagenLIst.demo.service;
 
 import ImagenLIst.demo.Dto.UsuarioDto;
 import ImagenLIst.demo.entidades.Cliente;
-import ImagenLIst.demo.entidades.Reserva;
 import ImagenLIst.demo.entidades.Usuario;
 import ImagenLIst.demo.repository.UsuarioRepository;
 import lombok.AllArgsConstructor;
@@ -28,7 +27,6 @@ import java.util.Optional;
 public class UsuarioService {
     private final UsuarioRepository usuarioRepository;
     private final RolService rolService;
-
     private final CiudadService ciudadService;
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 

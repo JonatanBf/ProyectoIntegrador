@@ -30,4 +30,5 @@ public class Imagen {
     @Column
     private String url;
 
+
 }
