@@ -44,7 +44,7 @@ public class CategoriaController {
     }
 
     @PutMapping("/modificar/{id}")
-    public ResponseEntity<?> modificar(@RequestBody Categoria categoria, @PathVariable Long id) {
+    public ResponseEntity<?> modificar(@Valid @RequestBody Categoria categoria, @PathVariable Long id) {
 
         String titulo = categoria.getTitulo();
         Optional<Categoria> categoriaOptional = categoriaService.buscarPorId(id);

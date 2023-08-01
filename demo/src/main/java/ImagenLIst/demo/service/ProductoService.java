@@ -42,15 +42,15 @@ public class ProductoService {
 
         Producto productNew = new Producto();
 
-        if (nombre != null && !nombre.equals("")) productNew.setNombre(nombre);
+        productNew.setNombre(nombre);
 
-        if (descripcion != null && !descripcion.equals("")) productNew.setDescripcion(descripcion);
+         productNew.setDescripcion(descripcion);
 
-        if (latitud != null && !latitud.equals("")) productNew.setLatitud(latitud);
+        productNew.setLatitud(latitud);
 
-        if (longitud != null && !longitud.equals("")) productNew.setLongitud(longitud);
+         productNew.setLongitud(longitud);
 
-        if (direccion != null && !direccion.equals("")) productNew.setDireccion(direccion);
+         productNew.setDireccion(direccion);
 
         if (imagenes != null && imagenes.size()>0) productNew.setImagenes(imagenes);
 

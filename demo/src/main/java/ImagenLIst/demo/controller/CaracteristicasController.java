@@ -43,20 +43,19 @@ public class CaracteristicasController {
     }
 
     @PutMapping("/modificar/{id}")
-    public ResponseEntity<?> modificar(@RequestBody Caracteristicas c, @PathVariable Long id) {
-
+    public ResponseEntity<?> modificar(@Validated(Caracteristicas.ValidationGroup.class) @RequestBody Caracteristicas c, @PathVariable Long id) {
         Optional<Caracteristicas> getId = caracteristicasService.buscarPorId(id);
 
         Optional<Caracteristicas> buscarNombre = caracteristicasService.buscarPorNombre(c.getNombre());
 
         if (getId.isPresent()) {
-            if (buscarNombre.isPresent() ){
-                return new ResponseEntity<>("La Caracteristica : "+c.getNombre()+" ya existe en nuestros registros", null, HttpStatus.BAD_REQUEST);
+            if (buscarNombre.isPresent()) {
+                return new ResponseEntity<>("La Caracteristica : " + c.getNombre() + " ya existe en nuestros registros", null, HttpStatus.BAD_REQUEST);
             }
             caracteristicasService.modificar(c, id);
-            return new ResponseEntity<>("La Caracteristica se modifico con exito",HttpStatus.CREATED);
+            return new ResponseEntity<>("La Caracteristica se modifico con exito", HttpStatus.CREATED);
         }
-        return new ResponseEntity<>("No existe Caracteristica para el Id: "+id,HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("No existe Caracteristica para el Id: " + id, HttpStatus.NOT_FOUND);
     }
 
     @DeleteMapping("/eliminar/{id}")
